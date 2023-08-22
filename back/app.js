@@ -13,7 +13,9 @@ app.use(cors())
 console.log(process.env.DB_HOST)
 
 const totalItems=require('./routes/itemRouts/itemRoute')
-
+app.get("/",()=>{
+    res.send("<h1>working fine</h1>")
+})
 // mongoose.connect(process.env.DB_HOST,{
     
 //     useNewUrlParser: true,
